@@ -4,6 +4,7 @@ using AutoMapper;
 using MediatR;
 using MicroservicesTicket.Exceptions;
 using SegmentMicroservice.Models;
+using SegmentMicroservice.Repository;
 using SegmentMicroservice.Tickets.Commands.RefundTicket;
 
 namespace SegmentMicroservice.CommandHandlers

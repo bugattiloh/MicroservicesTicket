@@ -10,6 +10,7 @@ using Microsoft.OpenApi.Models;
 using SegmentMicroservice.CommandHandlers;
 using SegmentMicroservice.Infrastructure;
 using SegmentMicroservice.Middleware;
+using SegmentMicroservice.Repository;
 
 namespace SegmentMicroservice
 {
@@ -35,7 +36,6 @@ namespace SegmentMicroservice
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Tickets", Version = "v1"}); });
             services.AddScoped<ISegmentRepository, SegmentRepository>();
-            services.AddScoped<ISegmentService, SegmentService>();
             // services.AddApiVersioning();
             services.AddMediatR(typeof(SaleTicketCommandHandler));
         }

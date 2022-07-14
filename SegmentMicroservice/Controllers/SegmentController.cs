@@ -7,17 +7,15 @@ using SegmentMicroservice.Tickets.Commands.SaleTicket;
 
 namespace SegmentMicroservice.Controllers
 {
-    public class SegmentController: Controller
+    public class SegmentController : Controller
     {
-        private readonly ISegmentService _segmentService;
         private readonly IMediator _mediator;
 
-        public SegmentController(ISegmentService segmentService, IMediator mediator)
+        public SegmentController(IMediator mediator)
         {
-            _segmentService = segmentService;
             _mediator = mediator;
         }
-        
+
 
         [HttpPost]
         public async Task<IActionResult> Sale([FromBody] TicketDto ticketDto)

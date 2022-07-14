@@ -1,7 +1,10 @@
-﻿using System.Threading;
+﻿using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
 using MediatR;
 using SegmentMicroservice.Models;
+using SegmentMicroservice.Repository;
 using SegmentMicroservice.Tickets.Commands.SaleTicket;
 
 namespace SegmentMicroservice.CommandHandlers
