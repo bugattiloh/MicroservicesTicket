@@ -11,7 +11,7 @@ namespace SegmentMicroservice.CommandHandlers
 {
     public class RefundTicketCommandHandler : IRequestHandler<RefundTicketCommand>
     {
-        private ISegmentRepository _repository;
+        private readonly ISegmentRepository _repository;
         private readonly IMapper _mapper;
 
         public RefundTicketCommandHandler(IMapper mapper, ISegmentRepository repository)

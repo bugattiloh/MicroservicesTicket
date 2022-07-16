@@ -7,6 +7,8 @@ using SegmentMicroservice.Tickets.Commands.SaleTicket;
 
 namespace SegmentMicroservice.Controllers
 {
+    [ApiController]
+    [Route("[controller]/[action]")]
     public class SegmentController : Controller
     {
         private readonly IMediator _mediator;

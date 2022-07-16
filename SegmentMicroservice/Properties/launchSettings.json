@@ -17,12 +17,12 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Tickets": {
+    "SegmentMicroservice": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:8081;http://localhost:8080",
+      "applicationUrl": "https://localhost:8078;http://localhost:8079",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
